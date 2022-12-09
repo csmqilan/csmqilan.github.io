@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hey this my world</title>
+    <title>網頁前端課程試做網頁</title>
     <style>
         h4{color: mediumblue;
         font-size: 30px;}
@@ -14,21 +14,18 @@
     </style>
 </head>
 <body>
-    <h1>Hey this's my web!!</h1>
-    <p>Welcome and jast waiting for update.</p>
-    <!-- h1~7為網頁標題字體大小 -->
-    <!-- p為段落 -->
+    <nav>Welcome and jast waiting for update.</nav>
+    <!-- nav=為導覽列 -->
+    <h1>歡迎來到我的網頁!!</h1><hr>
+    <!-- hr=水平線 -->
     <p>&nbsp;</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos veniam recusandae esse tempore cumque, autem totam ebitis? recusandae a consectetur cum laboriosam fuga odit quam. Non voluptate accusamus aut recusandae excepturi! A blanditiis consequatur iusto tempore? Doloremque natus officia impedit fugiat.</p>
-    <!--
-        Lorem500 (指令)(數字是字數)
-        (會自動選寫，但內容並非正確，用於參考)
-        (=假文章)
-    -->
+    <!-- h1~7為網頁標題字體大小，p為段落 -->
+    <!-- &nbsp;為空格列-->
+    <p>&nbsp;</p>
+    <article>
     <h3><a href="https://kkplay3c.net/pm-sv-book-400/"
         target="_blank" >假文章應用</a> </h3>
-    <p>放心參數基礎上下實行職務老大身體強調坐在英雄發出更大除了儘量，他就行政格式禁止言論，有關線路，緩緩全新負責好了時候婚姻小區，因為短信用途一家谷歌見面病人西部，策略帝國郵遞區號鍵盤通用衝擊地理你會電源循環，因為前來喜愛規劃股份有限公司體系區別熱情男女說過可。</p>
-    <!--
+        <!--
         <a> href=""</a> (指定跳轉頁面/網址)
         ctlorem128 (指令)(數字是字數)(假文章)(=湊字數)
 
@@ -38,26 +35,41 @@
         _parent
         _top
         fr
-    -->
-    <img src="file:///D:/csmqilan/github/20221206/img/pexels-anastasia-shuraeva-6232495.jpg" alt="圖">
-    <!-- 相片插入
-        src 可直接插入網址(雲端、圖庫等等)
-        alt 使圖片跑不出來時的替代文字
-    -->
+        -->
+        <blockquote cite="https://kkplay3c.net/pm-sv-book-400/">
+        <p><q>放心參數基礎上下實行職務老大身體強調坐在英雄發出更大除了儘量，他就行政格式禁止言論，有關線路，緩緩全新負責好了時候婚姻小區，因為短信用途一家谷歌見面病人西部，策略帝國郵遞區號鍵盤通用衝擊地理你會電源循環，因為前來喜愛規劃股份有限公司體系區別熱情男女說過可。</q></p>
+        </blockquote>
+        <!-- blockquote為引述，q=""-->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quos veniam recusandae esse tempore cumque,
+        autem <s>$280</s> $199 totam ebitis? recusandae a consectetur cum
+        la boriosam fugaodit quam. Non volu ptateaccus amu sautrecu sa ndae excepturi! The <del>blanditiis</del>   <ins>cusand</ins> iusto tempore?
+        Doloremque natus officia impedit fugiat.</p>
+        <!-- Lorem500 (指令)(數字是字數)
+        (會自動選寫，但內容並非正確，用於參考)
+        (=假文章) -->
+        <!-- s為刪除線(不該被刪除時)，del為刪除線(錯誤更改時)，ins為底線-->
+    </article>
+    <img src="file:///D:/csmqilan/github/csmqilan.github.io/img/pexels-anastasia-shuraeva-6232495.jpg" alt="註解">
+    <!-- src 可直接插入網址(雲端、圖庫、相片插入 等等)
+    alt 使圖片跑不出來時的替代文字 -->
     <p>&nbsp;</p>
     <h2><font color="#ff0000">嗨嗨</font> </h2>
     <!-- 兩種不同選顏色方式 -->
-    <p>&nbsp;</p>
-    <h2 style="color :aquamarine">挖嘞</h2>
-    <!--
-        兩種不同選顏色方式
-        (此為較常用)
-    -->
+    <h2 style="color :aquamarine">常用</h2>
+    <!-- 兩種不同選顏色方式(此為較常用) -->
+    <button type="button" class="btn btn-success">按鈕A</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+
     <p>
         2022/12/06<br>
-        <strong>Welcome!!</strong><br>
-        <i>天天都是</i> 快樂天 <em>應該啦!?</em>
-        <!--strong 是粗體字，i跟em只是不同顯示斜體字的語法-->
+        <!-- br=換行 -->
+        <mark>
+        <strong>哈囉哈囉</strong>
+        <i>天天</i> 都是 <em>快樂天</em>
+        <!-- strong 是粗體字，i跟em只是不同顯示斜體字的語法 -->
+        </mark>
+        <!-- mark=似螢光筆註記 -->
     </p>
     <ol>
         <li>ASDFGJHKJKKL</li>
@@ -65,17 +77,38 @@
     </ol>
     <table border="3">
         <!-- border=""(表格框=框粗細) -->
+        <caption>表格</caption>
+        <thead>
         <tr>
+            <th></th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>a</th>
+            <td>表格a</td>
+            <td>表格a</td>
+            <td>表格a</td>
+        </tr>
+        <tr>
+            <th>b</th>
             <td>表格b</td>
             <td>表格b</td>
             <td>表格b</td>
         </tr>
         <tr>
-            <td>表格</td>
-            <td>表格</td>
-            <td>表格</td>
-        </tr>
+            <th>c</th>
+            <td>表格c</td>
+            <td>表格c</td>
+            <td>表格c</td>
+        </tr></thead>
     </table>
-
+    <aside>附加內容</aside>
+    <!-- aside=側欄、附加內容 -->
+    <p>&nbsp;</p>
+    <footer>THE END!!</footer>
+    <!-- footer=頁尾 -->
+    <time>Update with 2022/12/09.</time>
 </body>
 </html>
