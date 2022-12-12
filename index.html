@@ -17,36 +17,41 @@
 
     <title>網頁前端課程試做網頁</title>
     <style>
-        h4{color: mediumblue;
+        body{text-align: center;background-color: rgb(213, 250, 240);}
+        h1{color: mediumblue;
+        font-size: 30px;text-decoration: underline;}
+        h5{color: mediumblue;
         font-size: 30px;}
         p{color: rgb(71, 71, 126);
-        font-size: 10px;}
+        font-size: 10px;text-align: center;}
+        .style-red{color: olivedrab ;}
+        #title{margin: 15px;font-size: 10px;}
     </style>
-
+    <!--
+        style為CSS版型樣是設定 在例:前+body是將全部body設定為其樣式，也可以單獨設定其他樣式。
+        (;)為單一設定多屬性時可以該符號分隔，
+        color=顏色
+        text-align=文字對齊方式
+        font-size=字體大小
+        text-decoration=文字裝飾，比如底線、刪除線
+        background-color=背景色
+        .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
+        #title{}=類似一個集合可直接用於更改屬性(用法id="title")
+    -->
 </head>
 <body>
-    <div class="section text-h-center">
-        <p>水平置中</p>
-        </div>
-
-        <div class="section text-v-center">
-        <p>垂直置中</p>
-        </div>
-
-        <div class="section text-h-center text-v-center">
-        <p>水平垂直置中</p>
-        </div>
-    <nav>Welcome and jast waiting for update.</nav>
+    <nav style="background-color: cornflowerblue;color: gold;">Welcome and jast waiting for update.</nav>
     <!-- nav=為導覽列 -->
-    <h1>歡迎來到我的網頁!!</h1><hr>
-    <!-- hr=水平線 -->
     <p>&nbsp;</p>
+    <h1 class="style-red">歡迎來到我的網頁!!</h1><hr>
+    <div id="title">: ))</div><hr>
+    <!-- hr=水平線 -->
     <!-- h1~7為網頁標題字體大小，p為段落 -->
     <!-- &nbsp;為空格列-->
     <p>&nbsp;</p>
     <article>
-    <h3><a href="https://kkplay3c.net/pm-sv-book-400/"
-        target="_blank" >假文章應用</a> </h3>
+    <h5><a href="https://kkplay3c.net/pm-sv-book-400/"
+        target="_blank" >假文章應用</a> </h5>
         <!--
         <a> href=""</a> (指定跳轉頁面/網址)
         ctlorem128 (指令)(數字是字數)(假文章)(=湊字數)
@@ -72,18 +77,20 @@
         (=假文章) -->
         <!-- s為刪除線(不該被刪除時)，del為刪除線(錯誤更改時)，ins為底線-->
     </article>
-    <img src="file:///D:/csmqilan/github/csmqilan.github.io/img/pexels-anastasia-shuraeva-6232495.jpg" alt="註解">
-    <!-- src 可直接插入網址(雲端、圖庫、相片插入 等等)
-    alt 使圖片跑不出來時的替代文字 -->
+    <img src="pexels-anastasia-shuraeva-6232495.jpg" alt="註解"/>
+    <!-- img
+        src 可直接插入網址(雲端、圖庫、相片插入 等等)
+        alt 使圖片跑不出來時的替代文字
+    -->
     <p>&nbsp;</p>
-    <h2><font color="#ff0000">嗨嗨</font> </h2>
+    <h5><font color="#ff0000">嗨嗨</font> </h5>
     <!-- 兩種不同選顏色方式 -->
-    <h2 style="color :aquamarine">常用</h2>
+    <h5 style="color :rgb(10, 66, 48)">常用</h5>
     <!-- 兩種不同選顏色方式(此為較常用) -->
     <button type="button" class="btn btn-success">按鈕A</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-info">按鈕B</button>
 
-    <p>
+    <p style="padding: 10px ;">
         2022/12/06<br>
         <!-- br=換行 -->
         <mark>
@@ -93,13 +100,26 @@
         </mark>
         <!-- mark=似螢光筆註記 -->
     </p>
-    <ol>
+    <ul style="color:brown;border: 1px dashed blueviolet;margin-left: 800px;margin-right: 800px" >
         <li>ASDFGJHKJKKL</li>
         <li>ASDFKJKJKKL</li>
-    </ol>
-    <table border="3">
-        <!-- border=""(表格框=框粗細) -->
-        <caption>表格</caption>
+    </ul>
+    <!--
+        {ol有順序 或 ul 無順序} 序列
+        li 列表內文
+    -->
+    <div style="border: 3px solid red;width: 200px;padding: 10px;margin-right: 800px;margin-left: 800px;">表格<span style="color: coral;">內文</span></div>
+    <table border="3" width="300" cellpadding="10" >
+        <!--
+            div=段落 span=段落內文
+            border=表格框框粗細
+            width=表格框框寬
+            cellpadding=表格框框高
+            border: 1px dashed=虛線框框的區塊
+                    3px solid=實線框框的區塊
+            margin-right/left/top/bottom=邊距
+            padding=g;上下區塊邊距
+        -->
         <thead>
         <tr>
             <th></th>
@@ -126,7 +146,7 @@
             <td>表格c</td>
         </tr></thead>
     </table>
-    <h1 class="text-center mt-3">表單</h1>
+    <h5 class="text-center mt-3">表單</h5>
     <form   action="https://script.google.com/macros/s/AKfycbwCcr47uw3QFsPkPYjphStiY1E0i3-ywJy9wV_-nSNLVwFSZtfQz9r4CEyCbJlHI1NiaQ/exec" method="post"></form>
         <input type="text" name="name" value="" class="" id="name">
         <input type="button" value="送出">
