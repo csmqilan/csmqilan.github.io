@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- link href=""載入 Bootstrap 的 CSS -->
+    <!-- link href=""載入 Bootstrap 的 CSS 或外部的資源 -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/
     bootstrap.bundle.min.js"
@@ -24,7 +24,20 @@
         font-size: 30px;}
         p{color: rgb(71, 71, 126);
         font-size: 10px;text-align: center;}
+        table{border: 5px yellowgreen;}
+        th{color: brown;}
+        tr{color: crimson;}
+        div{
+            background-color: lavender;
+
+        }
+        /*class 選擇器(用法例:class="style-blod")*/
         .style-red{color: olivedrab ;}
+        .content{
+            padding: 20px;
+
+        }
+        /*id 選擇器(用法例:id="title")*/
         #title{margin: 15px;font-size: 10px;}
     </style>
     <!--
@@ -44,6 +57,10 @@
     <!-- nav=為導覽列 -->
     <p>&nbsp;</p>
     <h1 class="style-red">歡迎來到我的網頁!!</h1><hr>
+    <!--
+    .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
+    #title{}=類似一個集合可直接用於更改屬性(用法id="title")
+    -->
     <div id="title">: ))</div><hr>
     <!-- hr=水平線 -->
     <!-- h1~7為網頁標題字體大小，p為段落 -->
@@ -109,7 +126,6 @@
         li 列表內文
     -->
     <div style="border: 3px solid red;width: 200px;padding: 10px;margin-right: 800px;margin-left: 800px;">表格<span style="color: coral;">內文</span></div>
-    <table border="3" width="300" cellpadding="10" >
         <!--
             div=段落 span=段落內文
             border=表格框框粗細
@@ -120,32 +136,30 @@
             margin-right/left/top/bottom=邊距
             padding=g;上下區塊邊距
         -->
-        <thead>
+<div>
+    <table>
         <tr>
-            <th></th>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
         </tr>
         <tr>
-            <th>a</th>
             <td>表格a</td>
             <td>表格a</td>
             <td>表格a</td>
         </tr>
-        <tr>
-            <th>b</th>
+        <tr align="center">
             <td>表格b</td>
             <td>表格b</td>
             <td>表格b</td>
         </tr>
         <tr>
-            <th>c</th>
             <td>表格c</td>
             <td>表格c</td>
             <td>表格c</td>
-        </tr></thead>
+        </tr>
     </table>
+</div>
     <h5 class="text-center mt-3">表單</h5>
     <form   action="https://script.google.com/macros/s/AKfycbwCcr47uw3QFsPkPYjphStiY1E0i3-ywJy9wV_-nSNLVwFSZtfQz9r4CEyCbJlHI1NiaQ/exec" method="post"></form>
         <input type="text" name="name" value="" class="" id="name">
@@ -153,8 +167,9 @@
     <aside>附加內容</aside>
     <!-- aside=側欄、附加內容 -->
     <p>&nbsp;</p>
-    <footer>THE END!!THANKS TO WACTH!!</footer>
-    <!-- footer=頁尾 -->
-    <time>Update with 2022/12/09.</time>
+
 </body>
+<time>Update with 2022/12/09.</time><hr>
+<footer>THE END!!THANKS TO WACTH!!</footer>
+<!-- footer=頁尾 -->
 </html>
