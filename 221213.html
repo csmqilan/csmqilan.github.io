@@ -1,47 +1,211 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
-        header,nav{
-            height: 50px;
-            background: blueviolet;
-        }
-        .layout{
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
+
+        .layout {
             background-color: aquamarine;
             width: 960px;
             /*herght:800*/
             margin: auto;
             display: flex;
         }
-        .content{
-            background-color: beige;
-            padding: auto;
 
+        p.CT {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 500;
         }
 
 
+        .content {
+            background-color: beige;
+            padding: auto;
+        }
+
+        .item {
+            width: 100px;
+            /*height: 200px;*/
+            min-height: 100px;
+            border: 1px rgb(0, 0, 0);
+            border-radius: 20px;
+            display: flex;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            flex-grow: 1;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            flex-direction: row;
+            background-color: blueviolet;
+        }
+
+        table {
+            justify-content: center;
+        }
+
+        nav {
+            background-color: rgb(194, 108, 81);
+            color: gold;
+            text-align: center;
+            height: 60px;
+        }
+
+        .header {
+            color: blueviolet;
+
+        }
+        .header a{
+            color: #fa3;
+            font-weight: 20px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        time {
+            color: rgb(219, 44, 13);
+            align-items: flex-end;
+        }
+
+        footer {
+            background-color: rgb(248, 224, 224);
+            color: rgb(255, 0, 0);
+            text-align: center;
+        }
+
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-color: green;
+        }
+
+        .c {
+            background-color: blue;
+        }
+
+        /*style為CSS版型樣是設定 在例:前+body是將全部body設定為其樣式，也可以單獨設定其他樣式。
+        (;)為單一設定多屬性時可以該符號分隔
+        .名稱{}=類似一個集合可直接用於更改屬性(用法class="名稱")
+        #名稱{}=類似一個集合可直接用於更改屬性(用法id="名稱")
+        名稱{}=整個群組替換
+        class 選擇器(用法例:class="style-blod")
+        id 選擇器(用法例:id="title")
+        */
+        /*
+        border-radius: =圓角
+        justify-content: center =橫向置中
+        align-items: center =直向置中
+        display: flex =橫向換行
+        display: block =直向換行 (預設)
+        color=顏色
+        text-align=文字對齊方式
+        font-size=字體大小
+        text-decoration=文字裝飾，比如底線、刪除線
+        background-color=背景色
+        */
     </style>
 </head>
+
 <body>
-    <header style="background:aqua">網站標題</header>
-    <nav>nav</nav>
-    <table border="3">
-        <!-- border=""(表格框=框粗細) -->
-        <tr>
-            <td>表格b</td>
-            <td>表格b</td>
-            <td>表格b</td>
-        </tr>
-        <tr>
-            <td>表格</td>
-            <td>表格</td>
-            <td>表格</td>
-        </tr>
-    </table>
+    <div class="header">
+        <nav>
+            <a href="">首頁</a>
+            <a href="">最新消息</a>
+            <a href="">商品</a>
+            <a href="">資訊</a>
+            <a href="">問答Q&A</a>
+            <style></style>
+        </nav>
+    </div>
+    <!--
+        nav=為導覽列
+        header>網站標題
+    -->
+    <!-- &nbsp;為空格列-->
+    <div>
+    <p>&nbsp;</p>
+        <h2>嗨嗨~~:)</h2>
+        <table border="3">
+            <!-- border=""(表格框=框粗細) -->
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <td>表格a</td>
+                <td>表格a</td>
+                <td>表格a</td>
+            </tr>
+            <tr>
+                <td>表格b</td>
+                <td>表格b</td>
+                <td>表格b</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="item a">A</div>
+        <div class="item b">B</div>
+        <div class="item c">C</div>
+    </div>
+    <p>&nbsp;</p>
+    <article>
+        <h3 ><a href="https://kkplay3c.net/pm-sv-book-400/" target="_blank">假文章應用</a> </h3>
+        <!--
+        <a> href=""</a> (指定跳轉頁面/網址)
+        ctlorem128 (指令)(數字是字數)(假文章)(=湊字數)
+        target(下述為開啟格式)
+        _blank 開新分頁
+        _self
+        _parent
+        _top
+        fr
+        -->
+        <blockquote cite="https://kkplay3c.net/pm-sv-book-400/">
+            <p class="CT"><q>放心參數基礎上下實行職務老大身體強調坐在英雄發出更大除了儘量，他就行政格式禁止言論，有關線路，緩緩全新負責好了時候婚姻小區，因為短信用途一家谷歌見面病人西部，策略帝國郵遞區號鍵盤通用衝擊地理你會電源循環，因為前來喜愛規劃股份有限公司體系區別熱情男女說過可。</q></p>
+        </blockquote>
+        <!-- blockquote為引述，q=""-->
+        <p class="CT">Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Quos veniam recusandae esse tempore cumque,
+            autem <s>$280</s> $199 totam ebitis? recusandae a consectetur cum
+            la boriosam fugaodit quam. Non volu ptateaccus amu sautrecu sa ndae
+            excepturi! The <del>blanditiis</del> <ins>cusand</ins> iusto
+            tempore?
+            Doloremque natus officia impedit fugiat.</p>
+        <!-- Lorem500 (指令)(數字是字數)
+        (會自動選寫，但內容並非正確，用於參考)
+        (=假文章) -->
+        <!-- s為刪除線(不該被刪除時)，del為刪除線(錯誤更改時)，ins為底線-->
+    </article>
+    <img src="pexels-anastasia-shuraeva-6232495.jpg" alt="註解" />
+    <!-- img
+        src 可直接插入網址(雲端、圖庫、相片插入 等等)
+        alt 使圖片跑不出來時的替代文字
+    -->
 </body>
+<hr>
+<mark><time>Welcome and jast waiting for update.</time></mark>
+<!-- mark=似螢光筆註記 -->
+<footer>THE END!!THANKS TO WACTH!!</footer>
+<!-- footer=頁尾 -->
+
 </html>
