@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <!--網頁基礎語言-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- link href=""載入 Bootstrap 的 CSS 或外部的資源 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/
+    bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/
+    9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+
+    <title>網頁前端課程試做網頁</title>
+    <style>
+        body{text-align: center;background-color: rgb(213, 250, 240);}
+        h1{color: mediumblue;
+        font-size: 30px;text-decoration: underline;}
+        h5{color: mediumblue;
+        font-size: 30px;}
+        p{color: rgb(71, 71, 126);
+        font-size: 10px;text-align: center;}
+        table{border: 5px yellowgreen;}
+        th{color: brown;}
+        tr{color: crimson;}
+        div{
+            background-color: lavender;
+        }
+        /*class 選擇器(用法例:class="style-blod")*/
+        .style-red{color: olivedrab ;}
+        .content{
+            padding: 20px;
+        }
+        .text{display: flex;justify-content: center;align-items: center;}
+        /*id 選擇器(用法例:id="title")*/
+        #title{margin: 15px;font-size: 10px;}
+    </style>
+    <!--
+        style為CSS版型樣是設定 在例:前+body是將全部body設定為其樣式，也可以單獨設定其他樣式。
+        (;)為單一設定多屬性時可以該符號分隔
+
+        display: flex / block =區塊位置 :並排 / 直排(預設)
+        justify-content :center =水平 :置中
+        align-items: center =垂直 :置中
+        flex :none;width 50% / 100px / auto =項目 :各佔50% / 左or右固定100px / 彈性縮放
+        color =顏色
+        text-align =文字對齊方式
+        font-size =字體大小
+        text-decoration =文字裝飾，比如底線、刪除線
+        background-color =背景色
+
+        .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
+        #title{}=類似一個集合可直接用於更改屬性(用法id="title")
+    -->
+</head>
+<body>
+    <nav style="background-color: cornflowerblue;color: gold;">Welcome and jast waiting for update.</nav>
+    <!-- nav=為導覽列 -->
+    <p>&nbsp;</p>
+    <h1 class="style-red">歡迎來到我的網頁!!</h1><hr>
+    <!--
+    .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
+    #title{}=類似一個集合可直接用於更改屬性(用法id="title")
+    -->
+    <div id="title">: ))</div><hr>
+    <!-- hr=水平線 -->
+    <!-- h1~7為網頁標題字體大小，p為段落 -->
+    <!-- &nbsp;為空格列-->
+    <p>&nbsp;</p>
+    <article>
+    <h5><a href="https://kkplay3c.net/pm-sv-book-400/"
+        target="_blank" >假文章應用</a> </h5>
+        <!--
+        <a> href=""</a> (指定跳轉頁面/網址)
+        ctlorem128 (指令)(數字是字數)(假文章)(=湊字數)
+
+        target(下述為開啟格式)
+        _blank 開新分頁
+        _self
+        _parent
+        _top
+        fr
+        -->
+        <blockquote cite="https://kkplay3c.net/pm-sv-book-400/">
+        <p><q>放心參數基礎上下實行職務老大身體強調坐在英雄發出更大除了儘量，他就行政格式禁止言論，有關線路，緩緩全新負責好了時候婚姻小區，因為短信用途一家谷歌見面病人西部，策略帝國郵遞區號鍵盤通用衝擊地理你會電源循環，因為前來喜愛規劃股份有限公司體系區別熱情男女說過可。</q></p>
+        </blockquote>
+        <!-- blockquote為引述，q=""-->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quos veniam recusandae esse tempore cumque,
+        autem <s>$280</s> $199 totam ebitis? recusandae a consectetur cum
+        la boriosam fugaodit quam. Non volu ptateaccus amu sautrecu sa ndae excepturi! The <del>blanditiis</del>   <ins>cusand</ins> iusto tempore?
+        Doloremque natus officia impedit fugiat.</p>
+        <!-- Lorem500 (指令)(數字是字數)
+        (會自動選寫，但內容並非正確，用於參考)
+        (=假文章) -->
+        <!-- s為刪除線(不該被刪除時)，del為刪除線(錯誤更改時)，ins為底線-->
+    </article>
+    <img src="pexels-anastasia-shuraeva-6232495.jpg" alt="註解"/>
+    <!-- img
+        src 可直接插入網址(雲端、圖庫、相片插入 等等)
+        alt 使圖片跑不出來時的替代文字
+    -->
+    <p>&nbsp;</p>
+    <h5><font color="#ff0000">嗨嗨</font> </h5>
+    <!-- 兩種不同選顏色方式 -->
+    <h5 style="color :rgb(10, 66, 48)">常用</h5>
+    <!-- 兩種不同選顏色方式(此為較常用) -->
+    <button type="button" class="btn btn-success">按鈕A</button>
+    <button type="button" class="btn btn-outline-info">按鈕B</button>
+    <div >歐嗨喲</div>
+    <p style="padding: 10px ;">
+        2022/12/06<br>
+        <!-- br=換行 -->
+        <mark>
+        <strong>哈囉哈囉</strong>
+        <i>天天</i> 都是 <em>快樂天</em>
+        <!-- strong 是粗體字，i跟em只是不同顯示斜體字的語法 -->
+        </mark>
+        <!-- mark=似螢光筆註記 -->
+    </p>
+    <ul style="color:brown;border: 1px dashed blueviolet;margin-left: 800px;margin-right: 800px" >
+        <li>ASDFGJHKJKKL</li>
+        <li>ASDFKJKJKKL</li>
+    </ul>
+    <!--
+        {ol有順序 或 ul 無順序} 序列
+        li 列表內文
+    -->
+    <div style="border: 3px solid red;width: 200px;padding: 10px;margin-right: 800px;margin-left: 800px;">表格<span style="color: coral;">內文</span></div>
+        <!--
+            div=段落 span=段落內文
+            border=表格框框粗細
+            width=表格框框寬
+            cellpadding=表格框框高
+            border: 1px dashed=虛線框框的區塊
+                    3px solid=實線框框的區塊
+            margin-right/left/top/bottom=邊距
+            padding=g;上下區塊邊距
+        -->
+<div>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>表格a</td>
+            <td>表格a</td>
+            <td>表格a</td>
+        </tr>
+        <tr align="center">
+            <td>表格b</td>
+            <td>表格b</td>
+            <td>表格b</td>
+        </tr>
+        <tr>
+            <td>表格c</td>
+            <td>表格c</td>
+            <td>表格c</td>
+        </tr>
+    </table>
+</div>
+    <h5 class="text-center mt-3">表單</h5>
+    <form   action="https://script.google.com/macros/s/AKfycbwCcr47uw3QFsPkPYjphStiY1E0i3-ywJy9wV_-nSNLVwFSZtfQz9r4CEyCbJlHI1NiaQ/exec" method="post"></form>
+        <input type="text" name="name" value="" class="" id="name">
+        <input type="button" value="送出">
+    <aside>附加內容</aside>
+    <!-- aside=側欄、附加內容 -->
+    <p>&nbsp;</p>
+
+</body>
+<time>Update with 2022/12/09.</time><hr>
+<footer>THE END!!THANKS TO WACTH!!</footer>
+<!-- footer=頁尾 -->
+</html>

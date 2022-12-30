@@ -153,25 +153,25 @@
                 ) { //簡答
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label for="${stru[i]['name']}" class="form-label">${stru[i]['label']}</label>
-              <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${stru[i]['value']}" class="form-control" id="${stru[i]['name']}" ${stru[i]['valid']}>
+                <label for="${stru[i]['name']}" class="form-label">${stru[i]  ['label']}</label>
+                <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${stru[i]['value']}" class="form-control" id="${stru[i]['name']}" ${stru[i]['valid']}>
             </div>`;
                 } else if (stru[i]['type'] === 'radio') {
                     options = stru[i]['option'].split('|');
                     options_html = '';
                     /*
-                      ['雞腿', '排骨', '招牌']
-                      options[0]
-                      options[1]
-                      options[2]
-                      options[j]
+                        ['雞腿', '排骨', '招牌']
+                        options[0]
+                        options[1]
+                        options[2]
+                        options[j]
                     */
                     for (let j in options) {
                         options_html += `
-              <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline">
                 <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${options[j]}" class="form-check-input" id="${stru[i]['name']}_${j}" ${stru[i]['valid']}>
                 <label class="form-check-label" for="${stru[i]['name']}_${j}">${options[j]}</label>
-              </div>`;
+                </div>`;
                     };
 
                     // console.log(options_html);
@@ -179,8 +179,8 @@
                     //選項html
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label class="form-label w-100">${stru[i]['label']}</label>
-              ${options_html}
+                <label class="form-label w-100">${stru[i]['label']}</label>
+                ${options_html}
             </div>`;
 
                 } else if (stru[i]['type'] === 'select') {
@@ -192,15 +192,15 @@
                     options_html = '';
                     for (let j in options) {
                         options_html += `
-              <option value="${options[j]}">${options[j]}</option>`;
+                <option value="${options[j]}">${options[j]}</option>`;
                     }
 
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label class="form-label">${stru[i]['label']}</label>
-              <select name="${stru[i]['name']}" class="form-select" id="${stru[i]['name']}" ${stru[i]['valid']}>
-               ${options_html}
-              </select>
+                <label class="form-label">${stru[i]['label']}</label>
+                <select name="${stru[i]['name']}" class="form-select" id="${stru[i]['name']}" ${stru[i]['valid']}>
+                ${options_html}
+                </select>
             </div>`;
                 } else if (stru[i]['type'] === 'select_m') {
                     // 1.首先替換 變數
@@ -211,22 +211,22 @@
                     options_html = '';
                     for (let j in options) {
                         options_html += `
-              <option value="${options[j]}">${options[j]}</option>`;
+                <option value="${options[j]}">${options[j]}</option>`;
                     }
 
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label class="form-label">${stru[i]['label']}</label>
-              <select name="${stru[i]['name']}" class="form-select" id="${stru[i]['name']}" ${stru[i]['valid']} multiple >
-               ${options_html}
-              </select>
+                <label class="form-label">${stru[i]['label']}</label>
+                <select name="${stru[i]['name']}" class="form-select" id="${stru[i]['name']}" ${stru[i]['valid']} multiple >
+                ${options_html}
+                </select>
             </div>`;
                 } else if (stru[i]['type'] === '段落') {
 
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label class="form-label">${stru[i]['label']}</label>
-              <textarea name="${stru[i]['name']}" class="form-control" id="${stru[i]['name']}" rows="5" ${stru[i]['valid']}>${stru[i]['value']}</textarea>
+                <label class="form-label">${stru[i]['label']}</label>
+                <textarea name="${stru[i]['name']}" class="form-control" id="${stru[i]['name']}" rows="5" ${stru[i]['valid']}>${stru[i]['value']}</textarea>
             </div>`;
                 } else if (stru[i]['type'] === 'checkbox') {
                     options = stru[i]['option'].split('|');
@@ -236,16 +236,16 @@
 
                     for (let j in options) {
                         options_html += `
-              <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline">
                 <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${options[j]}" class="form-check-input ${stru[i]['name']}" id="${stru[i]['name']}_${j}" ${stru[i]['valid']} ${required}>
                 <label class="form-check-label" for="${stru[i]['name']}_${j}">${options[j]}</label>
-              </div>`;
+                </div>`;
                     };
 
                     form_item_html += `
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label class="form-label w-100">${stru[i]['label']}</label>
-              ${options_html}
+                <label class="form-label w-100">${stru[i]['label']}</label>
+                ${options_html}
             </div>`;
                 } else if (stru[i]['type'] === 'hidden') {
                     form_item_html += `
@@ -268,7 +268,7 @@
         }
 
         /*
-          渲染畫面
+            渲染畫面
         */
         function renderCheckbox(name) {
             if (isAtLeastOneChecked(name)) {
@@ -279,7 +279,7 @@
         }
 
         /*
-          判斷是否有勾選
+            判斷是否有勾選
         */
         function isAtLeastOneChecked(name) {
             let checkboxes = Array.from(document.getElementsByName(name));
@@ -290,7 +290,7 @@
         }
 
         /*=============================
-          設定屬性 required
+            設定屬性 required
         ===============================*/
         function setRequired(name) {
             let checkboxes = Array.from(document.getElementsByName(name));
@@ -300,7 +300,7 @@
         }
 
         /*=============================
-          移除屬性 required
+            移除屬性 required
         ===============================*/
         function removeRequired(name) {
             let checkboxes = Array.from(document.getElementsByName(name));
