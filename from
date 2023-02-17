@@ -2,4 +2,23 @@
 ctrl+F 尋找
 ctrl+H 取代
 stru[0]
-stru[0][label"]
+stru[1]['label']
+'0' == 0 true
+'0' === 0 false
+/*
+值 比較 型態 (型態有3種)
+一個=等於一個型態
+兩個等於比較型態
+三個則不成立
+
+例:
+let stru = [{
+    label: '繳費單位',
+    type: 'select',
+    name: 'unit',
+    value: '',
+    valid: '',
+    option: '玉山|國泰|台新|電費|水費',
+    width: '3'}];
+*/
+//迴圈
