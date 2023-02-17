@@ -3,8 +3,13 @@ ctrl+F 尋找
 ctrl+H 取代
 stru[0]
 stru[1]['label']
+stru=['a'，'b']
+callbackUrl
+callback_url
+
 '0' == 0 true
 '0' === 0 false
+
 /*
 值 比較 型態 (型態有3種)
 一個=等於一個型態
