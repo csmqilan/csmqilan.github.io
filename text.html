@@ -45,16 +45,44 @@
 
         display: flex / block =區塊位置 :並排 / 直排(預設)
         justify-content :center =水平 :置中
+                        :flex end = :尾端
         align-items: center =垂直 :置中
         flex :none;width 50% / 100px / auto =項目 :各佔50% / 左or右固定100px / 彈性縮放
         color =顏色
-        text-align =文字對齊方式
+        text-align:center =文字對齊方式:置中
         font-size =字體大小
         text-decoration =文字裝飾，比如底線、刪除線
         background-color =背景色
 
         .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
         #title{}=類似一個集合可直接用於更改屬性(用法id="title")
+
+        [Media Query]
+        @media (螢幕條件){符合條件的CSS設定}
+        @media (max-width:1200px){螢幕寬度在1200px以下時}
+        例:
+        .desktop{display:block}
+        .media{display:none}
+        .product{width:280px}
+        //上方為正常電腦寬螢幕時，而下方為手機板螢幕。
+        @media(max-width:1250px){
+            //螢幕寬度在1250px以下時
+            .desktop{display:none}
+            .media{display:block}
+            //當切換為電腦版則手機板設置會隱藏，反之亦然。
+            桌機最小螢幕1280px
+            .list{flex-wrap:wrap}
+            //flex-wrap:wrap 縮放螢幕時會自動排列下放
+            .product{width:45%}
+            //當寫在@media裡面會替換數值 其餘不變
+        }
+        class="desktop"  /  class="media" 直接做兩個版本
+
+        @media(max-width:500px){
+        //手機最大螢幕500px，那1250~500則為平板
+        .product{width:90%}
+        }
+
     -->
 </head>
 <body>
@@ -62,10 +90,6 @@
     <!-- nav=為導覽列 -->
     <p>&nbsp;</p>
     <h1 class="style-red">歡迎來到我的網頁!!</h1><hr>
-    <!--
-    .style-red{}=類似一個集合可直接用於更改屬性(用法class="style-blod")
-    #title{}=類似一個集合可直接用於更改屬性(用法id="title")
-    -->
     <div id="title">: ))</div><hr>
     <!-- hr=水平線 -->
     <!-- h1~7為網頁標題字體大小，p為段落 -->
